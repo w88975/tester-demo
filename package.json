@@ -1,0 +1,40 @@
+{
+  "name": "tester-demo",
+  "version": "0.0.1",
+  "description": "tester demo for editor-framework",
+  "author": "Firebox Technology",
+  "hosts": {
+      "editor-framework": "^0.1.0"
+  },
+  "main": "main.js",
+  "menus": {
+    "Developer/Tester-demo": {
+      "message": "tester-demo:open"
+    }
+  },
+  "panels": {
+    "panel": {
+      "frame": "panel/tester-demo.html",
+      "type": "dockable",
+      "title": "Tester demo",
+      "width": 500,
+      "height": 800,
+      "min-width": 500,
+      "messages": [
+
+      ],
+      "shortcuts": {
+        "command+t": "testShortCuts",
+        "a": "pressA",
+        "enter": "pressEnter"
+      },
+      "profiles": {
+        "local": {
+        }
+      }
+    }
+  },
+  "tests": [
+      "test/event.html"
+  ]
+}
